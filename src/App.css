@@ -1,38 +1,123 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (max-width: 991px) {
+  #home {
+    flex-direction: column;
   }
 }
 
-.App-header {
-  background-color: #282c34;
+#home {
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding: 30px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.8);
+  position: relative;
 }
 
-.App-link {
-  color: #61dafb;
+#about {
+  padding-top: 80px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#skills {
+  padding-top: 80px;
+}
+
+#portfolio {
+  padding-top: 80px;
+}
+
+#contact {
+  padding-top: 80px;
+}
+
+body {
+  background-color: #f0f8ff !important;
+}
+
+div .btn {
+  background-color: #000035;
+  color: var(--bs-white);
+}
+
+div .btn:hover {
+  color: var(--bs-white);
+  background-color: #0d6efd;
+}
+
+/************ Default Css ************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 75px;
+}
+
+body {
+  font-weight: 400;
+  overflow-x: hidden;
+  position: relative;
+  background-color: #121212 !important;
+  color: #fff !important;
+  font-family: "Centra", sans-serif !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+}
+
+p,
+a,
+li,
+button,
+ul {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+button {
+  border: 0;
+  background-color: transparent;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+@media (min-width: 1700px) {
+  main .container {
+    max-width: 100%;
+    padding: 0 150px;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+p.success {
+  color: green;
+}
+
+p.danger {
+  color: red;
 }

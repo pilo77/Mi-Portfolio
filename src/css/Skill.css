@@ -1,0 +1,34 @@
+.icons {
+  width: 100px;
+  cursor: pointer;
+}
+
+.name-icon {
+  font-size: 16px;
+  text-align: center;
+}
+@media (min-width: 495px) and (max-width: 768px) {
+  .column {
+    flex: 0 0 auto !important;
+    width: 33.33333333% !important;
+  }
+}
+
+.skill {
+  transition: all 0.3s ease-in-out;
+}
+
+.skill:hover {
+  transition: all 0.3s ease-in-out;
+  transform: translateY(-6px);
+}
+
+@keyframes odsoky {
+  0% {
+    transform: translateY(6px);
+  }
+
+  100% {
+    transform: translateY(1px);
+  }
+}
